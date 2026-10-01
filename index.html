@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ernesto España — Senior Backend Developer | Full Stack | Tech Lead. CV online con más de 9 años de experiencia en Laravel, Django, APIs RESTful y arquitecturas escalables.">
+  <meta name="theme-color" content="#090a0f">
+  <title data-i18n="page_title_index">Ernesto España — Senior Backend Developer | CV</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div data-include="./components/header.html"></div>
+
+  <main class="site-main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="text-accent font-mono text-sm mb-2 tracking-wide" data-i18n="hero_greeting">Hola, soy</p>
+          <h1 class="hero-title" data-i18n="hero_name">Ernesto España</h1>
+          <p class="hero-role" data-i18n="hero_role">Senior Backend Developer | Full Stack | Tech Lead</p>
+          <p class="hero-summary" data-i18n="hero_summary">Desarrollador Full Stack y Líder Técnico con más de 9 años de experiencia diseñando y construyendo sistemas escalables tipo CRM, ERP y plataformas corporativas.</p>
+
+          <div class="hero-meta mb-6">
+            <a href="https://maps.google.com/?q=Caracas,Venezuela" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+              <span data-i18n="hero_location">Caracas, Venezuela</span>
+            </a>
+            <span aria-hidden="true">•</span>
+            <a href="mailto:ernesto.espana@gmail.com">
+              <i data-lucide="mail" aria-hidden="true"></i>
+              <span data-i18n="hero_email">ernesto.espana@gmail.com</span>
+            </a>
+            <span aria-hidden="true">•</span>
+            <a href="tel:+584241519357">
+              <i data-lucide="phone" aria-hidden="true"></i>
+              <span data-i18n="hero_phone">+58 424 151 93 57</span>
+            </a>
+            <span aria-hidden="true">•</span>
+            <a href="https://linkedin.com/in/eespan" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="linkedin" aria-hidden="true"></i>
+              <span data-i18n="hero_linkedin">linkedin.com/in/eespan</span>
+            </a>
+          </div>
+
+          <div class="flex items-center gap-3 flex-wrap">
+            <a href="./contact.html" class="btn btn-primary">
+              <i data-lucide="send" aria-hidden="true"></i>
+              <span data-i18n="hero_cta_contact">Contactar</span>
+            </a>
+            <a href="./projects.html" class="btn btn-secondary">
+              <i data-lucide="folder" aria-hidden="true"></i>
+              <span data-i18n="nav_projects">Proyectos</span>
+            </a>
+            <button class="btn btn-secondary" onclick="window.print()">
+              <i data-lucide="download" aria-hidden="true"></i>
+              <span data-i18n="hero_cta_download">Descargar CV</span>
+            </button>
+            <span class="status-badge" data-i18n="status_available">Disponible para nuevas oportunidades</span>
+          </div>
+        </div>
+
+        <div class="hidden lg:block">
+          <div class="stat-card">
+            <div class="stat-value">9+</div>
+            <div class="stat-label" data-i18n="experience_title">Experiencia Laboral</div>
+          </div>
+          <div class="grid grid-2 mt-4">
+            <div class="stat-card">
+              <div class="stat-value">3</div>
+              <div class="stat-label" data-i18n="stat_countries">Países</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">8</div>
+              <div class="stat-label" data-i18n="stat_team">Dev. liderados</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Summary -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label" data-i18n="summary_title">Resumen Profesional</span>
+        </div>
+        <div class="card">
+          <p class="card-body mb-4" data-i18n="summary_p1">Desarrollador Full Stack y Líder Técnico con más de 9 años de experiencia diseñando y construyendo sistemas escalables tipo CRM, ERP y plataformas corporativas. Especializado en desarrollo backend con Laravel y Django, diseño de APIs RESTful y arquitecturas orientadas a microservicios.</p>
+          <p class="card-body" data-i18n="summary_p2">Experiencia liderando equipos de hasta 8 desarrolladores, tomando decisiones de arquitectura y optimizando sistemas de alto tráfico. Enfocado en rendimiento, automatización de procesos y entrega continua en entornos de alta concurrencia mediante CI/CD con Docker, GitHub Actions y Kubernetes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Career Highlights -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label" data-i18n="nav_experience">Experiencia</span>
+          <h2 class="section-title" data-i18n="career_highlights_title">Experiencia destacada</h2>
+          <p class="section-desc" data-i18n="career_highlights_desc">Resumen de los roles más recientes como líder técnico y desarrollador backend.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card">
+            <div class="text-accent font-mono text-xs mb-2" data-i18n="exp_date_1">Enero 2019 – Abril 2026</div>
+            <h3 class="card-title text-lg" data-i18n="exp_role_1">Desarrollador Laravel (Remoto / Por proyectos)</h3>
+            <p class="card-subtitle mb-3" data-i18n="exp_company_1">Veflat SAS, Bogotá, Colombia</p>
+            <p class="card-body" data-i18n="exp_highlight_1">Desarrollo de CRM/ERP escalables con Laravel, Vue.js y PostgreSQL/MySQL en Veflat SAS.</p>
+          </article>
+
+          <article class="card">
+            <div class="text-accent font-mono text-xs mb-2" data-i18n="exp_date_2">Octubre 2020 – Marzo 2026</div>
+            <h3 class="card-title text-lg" data-i18n="exp_role_2">Developer (Remoto – Full time)</h3>
+            <p class="card-subtitle mb-3" data-i18n="exp_company_2">DataFactory, Buenos Aires, Argentina</p>
+            <p class="card-body" data-i18n="exp_highlight_2">Generación automatizada de contenido deportivo con PHP, XSLT, Django e integraciones de IA en DataFactory.</p>
+          </article>
+
+          <article class="card">
+            <div class="text-accent font-mono text-xs mb-2" data-i18n="exp_date_3">Diciembre 2016 – Enero 2025</div>
+            <h3 class="card-title text-lg" data-i18n="exp_role_3">Líder de Tecnologías de Información</h3>
+            <p class="card-subtitle mb-3" data-i18n="exp_company_3">CANTV, Caracas, Venezuela</p>
+            <p class="card-body" data-i18n="exp_highlight_3">Liderazgo técnico de 8 desarrolladores y desarrollo de sistemas corporativos críticos en CANTV.</p>
+          </article>
+        </div>
+        <div class="mt-6">
+          <a href="./experience.html" class="btn btn-secondary">
+            <i data-lucide="briefcase" aria-hidden="true"></i>
+            <span data-i18n="career_highlights_cta">Ver toda la experiencia</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label" data-i18n="nav_projects">Proyectos</span>
+          <h2 class="section-title" data-i18n="featured_projects_title">Proyectos destacados</h2>
+          <p class="section-desc" data-i18n="featured_projects_desc">Algunos proyectos públicos en los que he trabajado recientemente.</p>
+        </div>
+        <div class="grid-2">
+          <article class="card project-card">
+            <div class="card-header">
+              <div>
+                <h3 class="card-title" data-i18n="project_1_name">Dajosoft</h3>
+                <p class="card-subtitle">CRM / ERP</p>
+              </div>
+              <a href="https://dajosoft.com" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Dajosoft">
+                <i data-lucide="external-link" aria-hidden="true"></i>
+              </a>
+            </div>
+            <p class="card-body" data-i18n="project_1_desc">Software CRM/ERP para empresas. Permite cotizar, gestionar cartera de clientes, proyectos, facturación, cuentas por cobrar y pagar.</p>
+            <div class="skill-list mt-4">
+              <span class="badge badge-accent">Laravel</span>
+              <span class="badge badge-accent">NestJS</span>
+              <span class="badge">PostgreSQL</span>
+              <span class="badge">Redis</span>
+              <span class="badge">Docker</span>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="card-header">
+              <div>
+                <h3 class="card-title" data-i18n="project_4_name">Portal Gestión de Usuarios Televisión Satelital CANTV</h3>
+                <p class="card-subtitle">CANTV</p>
+              </div>
+              <a href="https://tvsenlinea.cantv.com.ve/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Portal TV Satelital CANTV">
+                <i data-lucide="external-link" aria-hidden="true"></i>
+              </a>
+            </div>
+            <p class="card-body" data-i18n="project_4_desc">Portal para activar, desactivar y cambiar de plan el servicio de televisión satelital de la compañía CANTV.</p>
+            <div class="skill-list mt-4">
+              <span class="badge badge-accent">Laravel</span>
+              <span class="badge badge-accent">Vue.js</span>
+              <span class="badge">PostgreSQL</span>
+              <span class="badge">SOAP</span>
+              <span class="badge">SAP</span>
+            </div>
+          </article>
+        </div>
+        <div class="mt-6">
+          <a href="./projects.html" class="btn btn-secondary">
+            <i data-lucide="folder" aria-hidden="true"></i>
+            <span data-i18n="featured_projects_cta">Ver todos los proyectos</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Snapshot -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label" data-i18n="skills_title">Habilidades Técnicas</span>
+          <h2 class="section-title" data-i18n="skills_preview_title">Stack principal</h2>
+          <p class="section-desc" data-i18n="skills_desc">Stack técnico consolidado a lo largo de más de 9 años construyendo sistemas corporativos, APIs de alto rendimiento y liderando equipos de desarrollo.</p>
+        </div>
+        <div class="skill-category">
+          <div class="skill-list">
+            <span class="badge badge-accent">PHP</span>
+            <span class="badge badge-accent">Laravel</span>
+            <span class="badge badge-accent">Django</span>
+            <span class="badge badge-accent">Node.js</span>
+            <span class="badge badge-accent">NestJS</span>
+            <span class="badge">Vue.js</span>
+            <span class="badge">React</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">PostgreSQL</span>
+            <span class="badge">MySQL</span>
+            <span class="badge">Docker</span>
+            <span class="badge">Kubernetes</span>
+            <span class="badge">CI/CD</span>
+            <span class="badge">GitHub Actions</span>
+            <span class="badge">REST APIs</span>
+            <span class="badge">Microservicios</span>
+          </div>
+        </div>
+        <div class="mt-6">
+          <a href="./skills.html" class="btn btn-secondary">
+            <i data-lucide="arrow-right" aria-hidden="true"></i>
+            <span data-i18n="skills_cta">Ver todas las habilidades</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Languages -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label" data-i18n="education_title">Educación</span>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <h3 class="card-title" data-i18n="education_degree">TSU en Informática</h3>
+                <p class="card-subtitle" data-i18n="education_school">IUJO Núcleo Catia, Caracas, Venezuela</p>
+              </div>
+              <span class="badge badge-accent" data-i18n="education_year">Graduado: 2017</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <h3 class="card-title" data-i18n="languages_title">Idiomas</h3>
+              </div>
+            </div>
+            <div class="card-body space-y-2">
+              <div class="flex items-center gap-3">
+                <span class="badge badge-success">ES</span>
+                <span data-i18n="language_spanish">Español: Nativo</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="badge">EN</span>
+                <span data-i18n="language_english">Inglés: Intermedio (B1) — Lectura Técnica y documentación</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="card text-center" style="max-width: 48rem; margin-inline: auto;">
+          <div class="section-header">
+            <span class="section-label" data-i18n="nav_contact">Contacto</span>
+            <h2 class="section-title" data-i18n="contact_cta_title">¿Trabajamos juntos?</h2>
+            <p class="section-desc" data-i18n="contact_cta_desc">Estoy abierto a oportunidades senior, liderazgo técnico y proyectos de arquitectura de sistemas.</p>
+          </div>
+          <div class="mt-6">
+            <a href="./contact.html" class="btn btn-primary">
+              <i data-lucide="send" aria-hidden="true"></i>
+              <span data-i18n="contact_cta_button">Contactar</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-include="./components/footer.html"></div>
+
+  <script src="./assets/js/content.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

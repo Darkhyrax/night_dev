@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Información de contacto de Ernesto España. Email, teléfono y LinkedIn.">
+  <meta name="theme-color" content="#090a0f">
+  <title data-i18n="page_title_contact">Contacto — Ernesto España</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div data-include="./components/header.html"></div>
+
+  <main class="site-main">
+    <section class="hero">
+      <div class="container">
+        <p class="text-accent font-mono text-sm mb-2 tracking-wide" data-i18n="nav_contact">Contacto</p>
+        <h1 class="hero-title" data-i18n="contact_title">Contacto</h1>
+        <p class="hero-summary" data-i18n="contact_desc">¿Tienes una oportunidad, consulta técnica o proyecto en mente? Estoy abierto a conversaciones sobre roles senior, liderazgo técnico y arquitectura de sistemas.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid-2">
+          <!-- Contact channels -->
+          <div class="space-y-4">
+            <a href="mailto:ernesto.espana@gmail.com" class="contact-card">
+              <div class="contact-icon" aria-hidden="true">
+                <i data-lucide="mail"></i>
+              </div>
+              <div>
+                <div class="contact-label" data-i18n="contact_email_label">Correo electrónico</div>
+                <div class="contact-value">ernesto.espana@gmail.com</div>
+                <div class="contact-hint" data-i18n="hero_email">ernesto.espana@gmail.com</div>
+              </div>
+            </a>
+
+            <a href="tel:+584241519357" class="contact-card">
+              <div class="contact-icon" aria-hidden="true">
+                <i data-lucide="phone"></i>
+              </div>
+              <div>
+                <div class="contact-label" data-i18n="contact_phone_label">Teléfono</div>
+                <div class="contact-value">+58 424 151 93 57</div>
+                <div class="contact-hint" data-i18n="hero_phone">+58 424 151 93 57</div>
+              </div>
+            </a>
+
+            <a href="https://linkedin.com/in/eespan" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div class="contact-icon" aria-hidden="true">
+                <i data-lucide="linkedin"></i>
+              </div>
+              <div>
+                <div class="contact-label" data-i18n="contact_linkedin_label">LinkedIn</div>
+                <div class="contact-value">linkedin.com/in/eespan</div>
+                <div class="contact-hint" data-i18n="hero_linkedin">linkedin.com/in/eespan</div>
+              </div>
+            </a>
+
+            <div class="contact-card">
+              <div class="contact-icon" aria-hidden="true">
+                <i data-lucide="map-pin"></i>
+              </div>
+              <div>
+                <div class="contact-label" data-i18n="contact_location_label">Ubicación</div>
+                <div class="contact-value" data-i18n="hero_location">Caracas, Venezuela</div>
+                <div class="contact-hint">UTC-4 / Remote LATAM</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact form -->
+          <div class="card">
+            <h2 class="card-title mb-4" data-i18n="contact_form_title">Enviar mensaje</h2>
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name" class="form-label" data-i18n="contact_form_name">Nombre</label>
+                <input type="text" id="name" name="name" class="form-input" required data-i18n-placeholder="contact_form_name_placeholder" placeholder="Tu nombre">
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label" data-i18n="contact_form_email">Correo electrónico</label>
+                <input type="email" id="email" name="email" class="form-input" required data-i18n-placeholder="contact_form_email_placeholder" placeholder="tu@correo.com">
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label" data-i18n="contact_form_message">Mensaje</label>
+                <textarea id="message" name="body" class="form-textarea" required data-i18n-placeholder="contact_form_message_placeholder" placeholder="Cuéntame sobre la oportunidad o proyecto..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-full">
+                <i data-lucide="send" aria-hidden="true"></i>
+                <span data-i18n="contact_form_send">Enviar mensaje</span>
+              </button>
+            </form>
+            <p class="text-muted text-sm mt-4" data-i18n="contact_form_note">El formulario abrirá tu cliente de correo predeterminado.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-include="./components/footer.html"></div>
+
+  <script src="./assets/js/content.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script>
+    // Build mailto body from form fields
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      const body = encodeURIComponent(
+        'Name: ' + name + '\n' +
+        'Email: ' + email + '\n\n' +
+        message
+      );
+      const subject = encodeURIComponent('Contact from CV website');
+      window.location.href = 'mailto:ernesto.espana@gmail.com?subject=' + subject + '&body=' + body;
+    });
+  </script>
+</body>
+</html>
